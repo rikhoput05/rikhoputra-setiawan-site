@@ -93,6 +93,10 @@
     .icon-btn.tg{color:#82d6ff}
     .icon-btn.dc{color:#b4b8ff}
 
+    .logo-wall{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:12px}
+    .logo-item{border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.04);padding:8px;display:grid;place-items:center;min-height:86px}
+    .logo-item img{max-width:100%;max-height:64px;object-fit:contain;border-radius:8px}
+
     .foot{margin-top:14px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:#95a5cc;font-size:13px}
 
     .reveal{opacity:0;transform:translateY(26px) scale(.985);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.65,.2,1)}
@@ -100,6 +104,7 @@
 
     @media(max-width:900px){
       .hero-grid,.stats,.process{grid-template-columns:1fr}
+      .logo-wall{grid-template-columns:repeat(2,minmax(0,1fr))}
       section{padding:22px}
       .menu{justify-content:flex-end}
     }
@@ -172,8 +177,15 @@
         <div class="k">Web3 Experience</div>
         <div class="v">Active in Web3 (2021 - Present)</div>
         <p class="muted" style="margin-bottom:0">
-          Previously served as an ambassador for <b>TEN Protocol</b>, <b>CARV</b>, <b>Concordium</b>, <b>Portal to Bitcoin</b>, and <b>NEAR Protocol</b> through an older X account before it was suspended.
+          Previously served as an ambassador through an older X account (before suspension).
         </p>
+        <div class="logo-wall" aria-label="Past ambassador logos">
+          <div class="logo-item" title="Concordium"><img src="assets/ambassadors/concordium.jpg" alt="Concordium logo"></div>
+          <div class="logo-item" title="Portal to Bitcoin"><img src="assets/ambassadors/portal-to-bitcoin.jpg" alt="Portal to Bitcoin logo"></div>
+          <div class="logo-item" title="CARV"><img src="assets/ambassadors/carv.jpg" alt="CARV logo"></div>
+          <div class="logo-item" title="TEN Protocol"><img src="assets/ambassadors/ten-protocol.png" alt="TEN Protocol logo"></div>
+          <div class="logo-item" title="NEAR Protocol"><img src="assets/ambassadors/near-protocol.png" alt="NEAR Protocol logo"></div>
+        </div>
       </div>
     </section>
 
